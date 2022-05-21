@@ -5,30 +5,30 @@ const ContactForm = () => {
     return (
         <div style={{
             background: `url(${bgImg})`
-        }} class="hero min-h-screen">
+        }} className="hero min-h-screen">
 
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <div class="card-body">
-                        <div class="form-control">
-                            <label class="label">
-                                <span class="label-text">Email</span>
+            <div className="hero-content flex-col lg:flex-row-reverse">
+                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div className="card-body">
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Email</span>
                             </label>
-                            <input type="text" placeholder="Email" class="input input-bordered" />
+                            <input type="text" placeholder="Email" className="input input-bordered" />
                         </div>
-                        <div class="form-control">
+                        <div className="form-control">
 
-                            <input type="text" placeholder="Subject" class="input input-bordered" />
+                            <input type="text" placeholder="Subject" className="input input-bordered" />
 
-                        </div>
-
-                        <div class="form-control">
-
-                            <input type="text" placeholder="Your Message" class="input input-bordered" />
                         </div>
 
-                        <div class="form-control mt-6">
-                            <button class="btn btn-primary text-white">Submit</button>
+                        <div className="form-control">
+
+                            <input type="text" placeholder="Your Message" className="input input-bordered" />
+                        </div>
+
+                        <div className="form-control mt-6">
+                            <button className="btn btn-primary text-white">Submit</button>
                         </div>
                     </div>
                 </div>

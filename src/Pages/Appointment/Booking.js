@@ -3,9 +3,9 @@ import React from 'react';
 const Booking = ({ booking, setTreatment }) => {
     const { name, slots } = booking;
     return (
-        <div class="card shadow-xl">
-            <div class="card-body">
-                <h2 class="card-title text-secondary uppercase">{name}</h2>
+        <div className="card shadow-xl">
+            <div className="card-body">
+                <h2 className="card-title text-secondary uppercase">{name}</h2>
                 <p>
                     {
                         slots.length > 0 ?
@@ -13,8 +13,8 @@ const Booking = ({ booking, setTreatment }) => {
                     }
                 </p>
                 <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available </p>
-                <div class="card-actions justify-center">
-                    <label for="my-modal" class="btn modal-button btn-secondary" disabled={slots.length === 0} onClick={() => setTreatment(booking)}>Booking Appointment</label>
+                <div className="card-actions justify-center">
+                    <label for="my-modal" className="btn modal-button btn-secondary" disabled={slots.length === 0} onClick={() => setTreatment(booking)}>Booking Appointment</label>
 
                 </div>
             </div>
